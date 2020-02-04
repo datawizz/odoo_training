@@ -4,7 +4,7 @@
 
     <record model="ir.ui.view" id="openacademy.list">
       <field name="name">OpenAcademy Tree View</field>
-      <field name="model">openacademy.openacademy</field>
+      <field name="model">openacademy.course</field>
       <field name="arch" type="xml">
         <tree string='Courses'>
           <field name="name"/>

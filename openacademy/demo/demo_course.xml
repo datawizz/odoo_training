@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
-        <record model='openacademy.openacademy' id="openacademy_course_01">
+        <record model='openacademy.course' id="openacademy_course_01">
             <field name='name'> Odoo Tech Training </field>
             <field name='expire_date'>2020-02-05</field>
             <field name='responsible_id' ref='base.user_demo'></field>
