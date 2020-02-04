@@ -17,7 +17,7 @@ class openacademy(models.Model):
 
     expire_date = fields.Date(string="Expire after", required=True)
 
-    responsible_id = fields.Many2One(
+    responsible_id = fields.Many2one(
         comodel_name="res.users", require=True, string="Responsible ID")
 
 """
