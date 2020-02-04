@@ -13,9 +13,12 @@ class openacademy(models.Model):
 
     banner = fields.Binary(string="banner")
 
-    price = fields.Float(string="Price", digits=[5,4])
+    price = fields.Float(string="Price", digits=[5, 4])
 
-    
+    expire_date = fields.Date(string="Expire after", required=True)
+
+    responsible_id = fields.Many2One(
+        comodel_name="res.users", require=True, string="Responsible ID")
 
 """
     name = fields.Char()
