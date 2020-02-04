@@ -11,7 +11,7 @@ class OpenAcademyTags(models.Model):
 
 
 class openacademy(models.Model):
-    _name = 'openacademy.course'
+    _name = 'openacademy.openacademy'
     _description = 'openacademy.openacademy'
 
     name = fields.Char(string="Course Title", required=True, index=True, help="Enter your course title here")
