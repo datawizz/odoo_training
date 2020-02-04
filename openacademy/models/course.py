@@ -7,6 +7,16 @@ class openacademy(models.Model):
     _name = 'openacademy.openacademy'
     _description = 'openacademy.openacademy'
 
+    name = fields.Char(string="Course Title", required=True, index=True, help="Enter your course title here")
+
+    description = fields.Html(string="Description")
+
+    banner = fields.Binary(string="banner")
+
+    price = fields.Float(string="Price", digits=[5,4])
+
+    
+
 """
     name = fields.Char()
     value = fields.Integer()
